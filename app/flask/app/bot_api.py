@@ -186,7 +186,6 @@ def followUsersUnderHashtag():
         
     # bot.connect_to_mysql()
     fetch_id_resp = bot.fetch_id_from_username()
-    print("user's ID from db! delete: ", fetch_id_resp)
     new_following_list_resp = bot.follow_users_under_hashtag(fetch_id_resp[1], hashtag, number_of_users)
 
     if new_following_list_resp[0] == 0:

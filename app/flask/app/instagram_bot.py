@@ -871,10 +871,7 @@ class instagram_bot:
             hashtag = hashtag.strip("#") # Removing any actual hashtag characters inputted
             self.driver.get('https://www.instagram.com/explore/tags/' + hashtag)
             sleep(self.rng())
-
-            print('gets here 2')
-            html = self.driver.page_source
-            print(html)
+            
             self.driver.find_elements_by_class_name("eLAPa")[9].click() # click on the first post in the Recent Posts section (10th box down, therefore index 9)
             sleep(2.81)
                 
