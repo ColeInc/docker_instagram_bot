@@ -28,7 +28,7 @@ class instagram_bot:
     #     self.password = ''
     #     self.mysql = ''
     #     self.driver = ''
-    #     self.resources = 'D:\Cole\Auckland University\Instagram Post Scheduler Bot\docker_instagram_bot\app\flask\resources'
+    #     self.resources = 'D:/Cole/Auckland University/Instagram Post Scheduler Bot/docker_instagram_bot/app/flask/resources/'
     #     print('-----------------------------------------------------------------------------')
     #     print("Starting instagram_bot in Windows via geckodriver!")
     #     print("Waiting for login from user...")
@@ -871,7 +871,7 @@ class instagram_bot:
             hashtag = hashtag.strip("#") # Removing any actual hashtag characters inputted
             self.driver.get('https://www.instagram.com/explore/tags/' + hashtag)
             sleep(self.rng())
-            
+
             self.driver.find_elements_by_class_name("eLAPa")[9].click() # click on the first post in the Recent Posts section (10th box down, therefore index 9)
             sleep(2.81)
                 
