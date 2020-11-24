@@ -1,0 +1,10 @@
+geckodriver.log
+app/flask/env
+app/flask/__pycache__/
+app/flask/app/__pycache__/
+app/flask/resources_real
+app/flask/app/bot_api.py_old
+app/flask/app/instagram_bot.py_old
+how_to_run.txt
+app_24112020.zip
+
